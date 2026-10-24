@@ -16,3 +16,6 @@ A robust, low-code security and routing safety layer designed to intercept, audi
 * **Core Execution**: Relevance AI
 * **Documentation & Synthesis**: NotebookLM
 * **Hosting & Deployment**: Netlify
+## Hackathon Provider Integration
+- **Model Provider & Gateway:** All agent inference and reasoning steps are routed through **Meterless** (powering NVIDIA Nemotron).
+- **Data Query Layer:** Federated telemetry queries are processed through **Zetaris**.
