@@ -1,21 +1,21 @@
-# Fail-Safe Gateway System
+# Fail-Safe Gateway System (Demo)
 
-A robust, low-code security and routing safety layer designed to intercept, audit, and redirect autonomous agent transactions and API payloads in real time.
+A simulated routing gate for agent workflows. It validates an incoming payload, passes clean payloads forward, and flags failed payloads for human review.
 
-## Live Proof-of-Work
-* **Live Deployment**: [ramon-failsafe.netlify.app](https://ramon-fail-safe.netlify.app)
-* **Architecture Style**: Low-code / No-code Multi-Agent Gateway Pipeline
+## Live Demo
+https://ramon-failsafe.netlify.app: browser demo with scripted scenarios. It makes no live API calls.
 
-## System Design & Architecture
-1. **Payload Interception**: Inspects incoming API requests and multi-agent workflow triggers before execution reaches core downstream nodes.
-2. **Security & Sanitization Guardrails**: Automatically scans for exposed credentials, unauthorized keys, and structural anomalies to prevent prompt injection or data leaks.
-3. **Autonomous Fail-Safe Routing**: Dynamically reroutes flagged or failing transactions to a secure quarantine queue or fallback execution path.
-4. **Audit Logging & Tactical UI**: Provides real-time event logging and status monitoring dashboards built with zero heavy backend dependencies.
+## What the Demo Does
+- Validates form input before routing.
+- Path A: passes clean payloads forward.
+- Path B: when validation fails or the enrichment API times out, sets Status = Requires_Human_Review, logs the reason, and adds the item to an alert list.
 
-## Approved Tech Stack
-* **Core Execution**: Relevance AI
-* **Documentation & Synthesis**: NotebookLM
-* **Hosting & Deployment**: Netlify
-## Hackathon Provider Integration
-- **Model Provider & Gateway:** All agent inference and reasoning steps are routed through **Meterless** (powering NVIDIA Nemotron).
-- **Data Query Layer:** Federated telemetry queries are processed through **Zetaris**.
+## Planned (Not Yet Built)
+- Credential and secret scanning
+- Prompt-injection detection
+- Quarantine queue
+- Live enrichment API calls
+- Persistent audit log and monitoring dashboard
+
+## Stack
+- Hosting: Netlify
