@@ -3,7 +3,7 @@
 A simulated routing gate for agent workflows. It validates an incoming payload, passes clean payloads forward, and flags failed payloads for human review.
 
 ## Live Demo
-https://ramon-failsafe.netlify.app: browser demo with scripted scenarios. It makes no live API calls.
+https://ramon-fail-safe.netlify.app: browser demo with scripted scenarios. It makes no live API calls.
 
 ## What the Demo Does
 - Validates form input before routing.
